@@ -3,9 +3,23 @@ body {
     font-size: 17px;
     background-color: #EEEEEE;
 }
+button {
+    border: none;
+    background-color: yellow;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bolder;
+}
+.header {
+    /* position: fixed; */
+    background-color: #EEEEEE;
+    margin-top: 0px;
+    /* width: 100%; */
+}
 .header .flex-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 .flex-container .flex-item{
     margin: 10px;
@@ -22,10 +36,29 @@ body {
     margin-left: 40px;
     list-style-type: none;
 }
+.news .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.news .flex-container input {
+    border-radius: 4px;
+    padding: 10px;
+    width: 20%;
+    margin-bottom: 5px;
+}
+.news .flex-container button{
+    display: block;
+    margin-top: 5px;
+    width: 200px;
+}
 
 .featuers {
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 50px;
 }
 .featuers .rwo div:first-child {
     width: 50px;
@@ -39,4 +72,81 @@ body {
     margin-right: 40px;
     color: #FF8C00;
     margin-top: 30px;
+}
+.youtube {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.cards .flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.cards .flex-container .card {
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin-top: 70px;
+}
+.cards .flex-container .card .flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.cards .flex-container .card .flex-container h3 {
+    
+    color: black;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.cards .flex-container .card .flex-container span {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.cards .flex-container .card .flex-container ol {
+    text-align: center;
+    padding: 0px;
+}
+.cards .flex-container .card .flex-container ol li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 7px;
+}
+.cards .flex-container .card .flex-container button {
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #ddd;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+.footer ul li {
+    list-style-type: none;
+    margin-left: 10px;
+}
+.footer ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.footer span {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 5px;
 }
